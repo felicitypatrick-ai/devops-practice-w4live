@@ -1,6 +1,6 @@
 """Harbor Street Bakery: order totals for the online order page (course sample code)."""
 
-DOZEN_DISCOUNT_PERCENT = 10  # 10 percent off an order of 12 or more of one item
+DOZEN_DISCOUNT_PERCENT = 15  # 15 percent off an order of 12 or more of one item
 
 
 def order_total(price_cents, quantity):
