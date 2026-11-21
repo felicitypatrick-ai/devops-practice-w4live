@@ -8,8 +8,11 @@ class OrderTotalTests(unittest.TestCase):
         self.assertEqual(order_total(350, 1), 350)
 
     def test_dozen_gets_discount(self):
-        self.assertEqual(order_total(200, 12), 2040)
+        self.assertEqual(order_total(200, 12), 2160)
 
     def test_zero_items_is_refused(self):
         with self.assertRaises(ValueError):
             order_total(200, 0)
+
+    def test_two_dozen_gets_bulk_discount(self):
+        self.assertEqual(order_total(200, 24), 4080)
